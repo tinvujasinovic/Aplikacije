@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b3d0a2e738af40949ef51f6d600762c9" Name="Diagram1">
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.biljeske" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.dobavlja" Width="1.5" PointX="10" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.dobavljaci" Width="1.5" PointX="7.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.korisnici" Width="1.5" PointX="7.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.kupci" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.mjerne_jedinice" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.narudzbe" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.proizvodi" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.proizvodi_na_narudzbi" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.racuni" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.sirovine" Width="1.5" PointX="7.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MilkyAppDataBaseModel.zadaci" Width="1.5" PointX="10" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__biljeske__korisn__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__dobavlja__dobavl__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__dobavlja__sirovi__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__zadaci__korisnik__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__narudzbe__kupac___3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__proizvodi__mjern__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__proizvodi__narud__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__racuni__narudzba__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="MilkyAppDataBaseModel.FK__proizvodi__proiz__4316F928" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
