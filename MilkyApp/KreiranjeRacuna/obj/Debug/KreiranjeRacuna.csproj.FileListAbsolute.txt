@@ -1,0 +1,6 @@
+C:\Users\Tin Vujasinović\Desktop\PI_projekt_repo\MilkyApp\KreiranjeRacuna\bin\Debug\KreiranjeRacuna.dll
+C:\Users\Tin Vujasinović\Desktop\PI_projekt_repo\MilkyApp\KreiranjeRacuna\bin\Debug\KreiranjeRacuna.pdb
+C:\Users\Tin Vujasinović\Desktop\PI_projekt_repo\MilkyApp\KreiranjeRacuna\obj\Debug\KreiranjeRacuna.csprojResolveAssemblyReference.cache
+C:\Users\Tin Vujasinović\Desktop\PI_projekt_repo\MilkyApp\KreiranjeRacuna\obj\Debug\KreiranjeRacuna.csproj.CoreCompileInputs.cache
+C:\Users\Tin Vujasinović\Desktop\PI_projekt_repo\MilkyApp\KreiranjeRacuna\obj\Debug\KreiranjeRacuna.dll
+C:\Users\Tin Vujasinović\Desktop\PI_projekt_repo\MilkyApp\KreiranjeRacuna\obj\Debug\KreiranjeRacuna.pdb
