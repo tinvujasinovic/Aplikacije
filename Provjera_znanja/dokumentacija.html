@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Liverpool FC</title>
+        <meta charset="utf-8">
+        <link rel ="stylesheet" type="text/css" href="css/stil.css">
+        <meta name="naslov" content="Liverpool FC">
+        <meta name="datum posljednje promjene" content="14.3.2018.">
+        <meta name="autor" content="Tin Vujasinović">
+    </head>
+    <body>
+        <header>
+            <h2>Provjera znanja</h2>
+            <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'hr', includedLanguages: 'de,en,fr,sl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </header>
+        <nav class="navi">
+            <ul>
+                <li><a href="index.php">Početna</a></li>
+                <li><a href="registracija.php">Registracija</a></li>
+                <li><a href="prijava.php">Prijava</a></li>
+                <li><a href="privatno/korisnici.php">Korisnici</a></li>
+            </ul>
+        </nav>
+        <section id="dokumentacija">
+            <div>
+                <h2>Dokumentacija</h2>
+                <h3>Opis projektnog zadatka</h3>
+                <p>
+                    Zadatak je bio napraviti sustav koji omogućuje provjeru znanja korisnika i natjecanje s drugim korisnicima. Moguće su četiri vrste korisnika, <b>anonimni (neregistrirani korisnik), registrirani korisnik, moderator te administrator</b>.<br>    
+                    <b>Anonimni korisnici</b> mogu vidjeti kategorije natjecanje, sva natjecanja iz neke kategorije (aktivna i prošla) te se natjecati i vidjeti rang listu. Mogu se i registrirati u sustav te postati registrirani korisnici.<br>
+                    <b>Registrirani korisnici</b> imaju sve mogućnosti kao i anonimni korisnici uz neke dodatne. Nakon prijave u sustav, mogu poslati administratoru zahtjev za kreiranjem novog oglasa ili za blokiranjem postojećeg. Mogu vidjeti svoje zahtjeve, njihov status te statitstiku klikova za svoje oglase.<br>
+                    <b>Moderator</b> je registrirani korisnik koji moderira kategorije za koje je zadužen. Definira pitanja za kategoriju i organizira natjecanja za tu kategoriju. Također određuje koji će se oglasi prikazivati na pozicijama za koje je zadužen, odgovara na zahtjeve za oglašavanje i blokiranje zahtjeva.<br>
+                    <b>Administrator</b> je odgovoran za konfiguraciju sustava, određuje pozicije oglasa, vidi statistiku svih oglasa, kreira kategorije pitanja i dodjelju im moderatore. 
+                </p>
+                <h3>Opis projektnog rješenja</h3>
+                <p>
+
+                </p>
+                <h4>ERA model</h4>
+                <img src="slike/ERA.png" id="era" alt="ERA model">
+                <p>
+
+                </p>
+                <h3>Popis i opis skripata i mapa mjesta</h3>
+                <h4>Skripte</h4>
+                <ol>
+                    <li><b>aktiviraj.php</b> - skripta na koju se usmjerava kada se klikne na poveznicu za aktivaciju koji korisnik dobije na mail kod registracije, provjera je li poveznica istekla te ako nije, aktivira korisnički račun</li>
+                    <li><b>baza.class.php</b> - klasa za pristup i rad s bazom podataka</li>
+                    <li><b>dokumentacija.html</b> - stranica s dokumentacijom projektnog rješenja</li>
+                    <li><b>index.php</b> - početna stranica sustava, sadrži kratki opis svrhe sustava</li>
+                    <li><b>o_autoru.html</b> - stranica s osnovnim podacima o autoru</li>
+                    <li><b>prijava.php</b> - skripta za prijavu u sustav, provjerava ispravnost unešenih podataka i prijavljuje korisnika u sustav ako se unešeni podaci nalaze u bazi podataka</li>
+                    <li><b>provjeraSesije.php</b> - skripta koja provjerava je li postavljen kolačić sesija kod odjave sa sustava, ako je postavljen, briše sesiju i taj kolačić</li>
+                    <li><b>registracija.php</b> - skripta za registraciju korisnika, provjerava ispravnost unesenih podataka te postoji li već korisnik s unesenim korisničim imenom, ukoliko su podaci ispravni, registrira korisnika i šalje aktivacijski mail</li>
+                    <li><b>sesija.class.php</b> - klasa za kreiranje i rad sa sesijom</li>
+                    <li><b>tinvujasi_javascript.js</b> - skripta s Javascript funkcijama</li>
+                    <li><b>zaboravljena.php</b> - skripta koja prima uneseno korisničko ime, generira lozinku i šalje novu lozinku na mail korisnika te sprema novu lozinku u bazu u čitljivom i kriptiranom obliku</li>
+                    <li><b>korisnici.php</b> - skripta koja u tabličnom obliku ispisuje osnovne podatke za sve korisnike sustava</li>
+                </ol>
+                <h4>Mape mjesta</h4>
+                <ol>
+                    <li><b>css</b> - mapa u kojoj se nalaze .css stilske datoteke</li>
+                    <li><b>privatno</b> - mapa zaštićena .htaccess datotekom u kojoj se nalazi skripta korisnici.php</li>
+                    <li><b>slike</b> - mapa u kojoj se nalaze slike koje se koriste u sustavu</li>
+                </ol>
+                <h3>Popis i opis korištenih tehnologija</h3>
+                <h4>Alati</h4>
+                <ol>
+                    <li><b>NetBeans IDE 8.2</b> - integrirano razvojno okruženje za Web development</li>
+                    <li><b>FileZilla</b> - alat za spajanje na udaljeni poslužitelj i prijenos i preuzimanje datoteka s istog</li>
+                    <li><b>MOzilla Firefox</b> - preglednik za otvaranje web stranica</li>
+                    <li><b>Google Chrome</b> - preglednik za otvaranje web stranica</li>
+                    <li><b>MySQL Workbench</b> - alat za izradu baza podataka i ERA modeliranje</li>
+                </ol>
+                <h4>Jezici</h4>
+                <ol>
+                    <li><b>PHP</b> - skriptni jezik za programiranje na strani poslužitelja</li>
+                    <li><b>Javascript</b> - skriptni jezik za programiranje na strani klijenta</li>
+                    <li><b>HTML5</b> - prezentacijski jezik za stvaranja Web dokumenata</li>
+                    <li><b>CSS3</b> - stilski jezik za opis prezentacije Web dokumenata izrađenih u HTML-u</li>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            <a href="http://validator.w3.org/check?uri=referer"><img id="html" src="slike/HTML5.png" alt="HTML5 ikona"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="slike/CSS3.png" alt="CSS3 ikona"></a>
+            <a href="o_autoru.html"><img id="o_autoru" src="slike/profilna.jpeg" alt="profilna"></a><a href="o_autoru.html" id="info">O autoru</a><br>
+            <a href="dokumentacija.html" id="info1">Dokumentacija</a>
+        </footer>
+    </body>
+</html>
